@@ -137,8 +137,6 @@ extern "C"
         MRH_EVENT_APP_LAUNCH_SOA_TIMER_U,                       // User - Launch application by full path (like LAUNCH_SOA_U) with added timepoint
         MRH_EVENT_APP_LAUNCH_SOA_CLEAR_U,                       // User - Clear application launch request
         MRH_EVENT_APP_LAUNCH_SOA_CLEAR_TIMER_U,                 // User - Clear all timed application launch requests
-        MRH_EVENT_APP_GET_DEFAULT_PACKAGE_U,                    // User - Request get application package path for default package type
-        MRH_EVENT_APP_SET_DEFAULT_PACKAGE_U,                    // User - Request set application package path for default package type
         MRH_EVENT_APP_CUSTOM_COMMAND_U,                         // User - Custom application command request
         
         MRH_EVENT_APP_AVAIL_S,                                  // Service - App available state
@@ -147,8 +145,6 @@ extern "C"
         MRH_EVENT_APP_LAUNCH_SOA_TIMER_REMINDER_S,              // Service - Send imminent timer launch to application (warning to quit)
         MRH_EVENT_APP_LAUNCH_SOA_CLEAR_S,                       // Service - Return clear application launch result
         MRH_EVENT_APP_LAUNCH_SOA_CLEAR_TIMER_S,                 // Service - Return clear all timed application launches result
-        MRH_EVENT_APP_GET_DEFAULT_PACKAGE_S,                    // Service - Return get application default package path result
-        MRH_EVENT_APP_SET_DEFAULT_PACKAGE_S,                    // Service - Return set application default package path result
         MRH_EVENT_APP_CUSTOM_COMMAND_S,                         // Service - Custom application command response
         
         // Notifications
