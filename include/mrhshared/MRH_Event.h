@@ -68,9 +68,11 @@ extern "C"
         MRH_EVENT_PS_RESET_ACKNOLEDGED_U = 5,                   // User - Service reset acknoledgement
         
         // Custom
-        MRH_EVENT_CUSTOM_CUSTOM_COMMAND_U = 6,                  // User - Custom service command
+        MRH_EVENT_CUSTOM_AVAIL_U = 6,                           // User - Custom services available
+        MRH_EVENT_CUSTOM_CUSTOM_COMMAND_U = 7,                  // User - Custom service command
         
-        MRH_EVENT_CUSTOM_CUSTOM_COMMAND_S = 7,                  // Service - Custom service command
+        MRH_EVENT_CUSTOM_AVAIL_S,                               // Service - Custom service availability state
+        MRH_EVENT_CUSTOM_CUSTOM_COMMAND_S,                      // Service - Custom service command
         
         // Voice - Listen
         MRH_EVENT_LISTEN_AVAIL_U,                               // User - Check voice input available

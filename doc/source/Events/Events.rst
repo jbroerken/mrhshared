@@ -39,7 +39,9 @@ Custom events are used interact with custom services.
 .. toctree::
   :maxdepth: 1
 
+  MRH_Event/Custom/MRH_EVENT_CUSTOM_AVAIL_U
   MRH_Event/Custom/MRH_EVENT_CUSTOM_CUSTOM_COMMAND_U
+  MRH_Event/Custom/MRH_EVENT_CUSTOM_AVAIL_S
   MRH_Event/Custom/MRH_EVENT_CUSTOM_CUSTOM_COMMAND_S
 
 Listen Events
