@@ -43,6 +43,7 @@ None.
 
 Remarks
 -------
-* The wide strings recieved by this event are null terminated unless the length 
+* String characters are expected to be in UTF-8 format.
+* The strings recieved by this event are null terminated unless the length 
   of the string in addition to the string part info data is equal to 
   :doc:`../../../Macros/MRH_Event/MRH_EVENT_DATA_SIZE_MAX`.

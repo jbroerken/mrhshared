@@ -18,7 +18,7 @@ Data Buffer
       - MRH_Uint32 (4)
       - The length of the launch input string in bytes.
     * - 8
-      - int (4)
+      - MRH_Sint32 (4)
       - The launch command ID.
     * - 12
       - MRH_Uint64 (8)
