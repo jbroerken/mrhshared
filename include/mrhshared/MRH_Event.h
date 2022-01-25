@@ -88,11 +88,13 @@ extern "C"
         MRH_EVENT_SAY_AVAIL_U,                                  // User - Check voice output available
         MRH_EVENT_SAY_STRING_U,                                 // User - Voice output string
         MRH_EVENT_SAY_GET_METHOD_U,                             // User - Request the current voice output method
+        MRH_EVENT_SAY_REMOTE_NOTIFICATION_U,                    // User - Send remote notification to user device
         MRH_EVENT_SAY_CUSTOM_COMMAND_U,                         // User - Custom say command request
         
         MRH_EVENT_SAY_AVAIL_S,                                  // Service - Voice output availability state
         MRH_EVENT_SAY_STRING_S,                                 // Service - Voice output string result
         MRH_EVENT_SAY_GET_METHOD_S,                             // Service - Voice output method request result
+        MRH_EVENT_SAY_REMOTE_NOTIFICATION_S,                    // Service - Remote notification send result
         MRH_EVENT_SAY_CUSTOM_COMMAND_S,                         // Service - Custom say command response
         
         // Password
