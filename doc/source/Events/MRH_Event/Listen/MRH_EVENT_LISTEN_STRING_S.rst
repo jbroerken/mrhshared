@@ -12,15 +12,9 @@ Data Buffer
       - Type (Byte Size)
       - Description
     * - 0
-      - MRH_Uint8 (1)
-      - The type of string contained.
-    * - 1
       - MRH_Uint32 (4)
       - The ID of the input string this string belongs to.
-    * - 5
-      - MRH_Uint32 (4)
-      - The part in regards to the string order this string belongs to.
-    * - 9
+    * - 4
       - char (Variable)
       - The UTF-8 string bytes.
 
@@ -45,5 +39,5 @@ Remarks
 -------
 * String characters are expected to be in UTF-8 format.
 * The strings recieved by this event are null terminated unless the length 
-  of the string in addition to the string part info data is equal to 
+  of the string in addition to the string id is equal to 
   :doc:`../../../Macros/MRH_Event/MRH_EVENT_DATA_SIZE_MAX`.
