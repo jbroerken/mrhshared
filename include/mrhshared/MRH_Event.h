@@ -88,13 +88,14 @@ extern "C"
         MRH_EVENT_SAY_AVAIL_U,                                  // User - Check voice output available
         MRH_EVENT_SAY_STRING_U,                                 // User - Voice output string
         MRH_EVENT_SAY_GET_METHOD_U,                             // User - Request the current voice output method
-        MRH_EVENT_SAY_REMOTE_NOTIFICATION_U,                    // User - Send remote notification to user device
+        MRH_EVENT_SAY_NOTIFICATION_APP_U,                       // User - Send remote notification from app
+        MRH_EVENT_SAY_NOTIFICATION_SERVICE_U,                   // User - Send remote notification from app service
         MRH_EVENT_SAY_CUSTOM_COMMAND_U,                         // User - Custom say command request
         
         MRH_EVENT_SAY_AVAIL_S,                                  // Service - Voice output availability state
         MRH_EVENT_SAY_STRING_S,                                 // Service - Voice output string result
         MRH_EVENT_SAY_GET_METHOD_S,                             // Service - Voice output method request result
-        MRH_EVENT_SAY_REMOTE_NOTIFICATION_S,                    // Service - Remote notification send result
+        MRH_EVENT_SAY_NOTIFICATION_APP_S,                       // Service - Remote notification send result (app only)
         MRH_EVENT_SAY_CUSTOM_COMMAND_S,                         // Service - Custom say command response
         
         // Password
@@ -151,24 +152,8 @@ extern "C"
         MRH_EVENT_APP_LAUNCH_SOA_CLEAR_TIMER_S,                 // Service - Return clear all timed application launches result
         MRH_EVENT_APP_CUSTOM_COMMAND_S,                         // Service - Custom application command response
         
-        // Notifications
-        MRH_EVENT_NOTIFICATION_AVAIL_U,                         // User - Check notification available
-        MRH_EVENT_NOTIFICATION_CREATE_APP_U,                    // User - Create notification for a application (Contains type, type data and message)
-        MRH_EVENT_NOTIFICATION_CREATE_SERVICE_U,                // User - Notification created by service (no return event) (Contains type, type data and message)
-        MRH_EVENT_NOTIFICATION_DESTROY_APP_U,                   // User - Destroy a waiting notification of the sender application (requires application specific key)
-        MRH_EVENT_NOTIFICATION_GET_WAITING_U,                   // User - Get if a notification is waiting to be recieved
-        MRH_EVENT_NOTIFICATION_GET_NEXT_U,                      // User - Get the next notification waiting, removing it from the avaiable queue
-        MRH_EVENT_NOTIFICATION_CUSTOM_COMMAND_U,                // User - Custom notification command request
-        
-        MRH_EVENT_NOTIFICATION_AVAIL_S,                         // Service - Notification available state
-        MRH_EVENT_NOTIFICATION_CREATE_APP_S,                    // Service - Notification creation request result
-        MRH_EVENT_NOTIFICATION_DESTROY_APP_S,                   // Service - Notification destruction request result
-        MRH_EVENT_NOTIFICATION_GET_WAITING_S,                   // Service - Notification waiting to be recieved result
-        MRH_EVENT_NOTIFICATION_GET_NEXT_S,                      // Service - Requested next availbale notification
-        MRH_EVENT_NOTIFICATION_CUSTOM_COMMAND_S,                // Service - Custom notification command response
-        
         // Max
-        MRH_EVENT_TYPE_MAX = MRH_EVENT_NOTIFICATION_CUSTOM_COMMAND_S,
+        MRH_EVENT_TYPE_MAX = MRH_EVENT_APP_CUSTOM_COMMAND_S,
         
         // Count
         MRH_EVENT_TYPE_COUNT = MRH_EVENT_TYPE_MAX + 1,

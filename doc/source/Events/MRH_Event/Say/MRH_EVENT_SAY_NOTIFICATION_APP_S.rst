@@ -1,7 +1,7 @@
-MRH_EVENT_SAY_REMOTE_NOTIFICATION_S
-===================================
-MRH_EVENT_SAY_REMOTE_NOTIFICATION_S contains the result for sending 
-a remote notification to a user device.
+MRH_EVENT_SAY_NOTIFICATION_APP_S
+================================
+MRH_EVENT_SAY_NOTIFICATION_APP_S contains the result of a application 
+notification event.
 
 Data Buffer
 -----------
@@ -13,7 +13,7 @@ Data Buffer
       - Description
     * - 0
       - MRH_Uint8 (1)
-      - 0 if the request succeeded, 1 if not.
+      - 0 if the notification was sent, 1 if not.
 
 
 Sender
@@ -26,7 +26,7 @@ User applications.
 
 Request Event
 -------------
-:doc:`MRH_EVENT_SAY_REMOTE_NOTIFICATION_U`.
+:doc:`MRH_EVENT_SAY_NOTIFICATION_APP_U`.
 
 Response Event
 --------------

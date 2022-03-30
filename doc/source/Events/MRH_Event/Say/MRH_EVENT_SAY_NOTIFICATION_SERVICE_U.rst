@@ -1,6 +1,6 @@
-MRH_EVENT_SAY_REMOTE_NOTIFICATION_U
-===================================
-MRH_EVENT_SAY_REMOTE_NOTIFICATION_U is used to send a notification to a
+MRH_EVENT_SAY_NOTIFICATION_SERVICE_U
+====================================
+MRH_EVENT_SAY_NOTIFICATION_SERVICE_U is used to send a notification to a
 user communication device.
 
 Data Buffer
@@ -14,11 +14,14 @@ Data Buffer
     * - 0
       - MRH_Uint8 (1)
       - The type of notification to send.
+    * - 1
+      - char (Variable)
+      - The UTF-8 notification string.
       
 
 Sender
 ------
-User applications.
+User application services.
 
 Reciever
 --------
@@ -30,7 +33,7 @@ None.
 
 Response Event
 --------------
-:doc:`MRH_EVENT_SAY_REMOTE_NOTIFICATION_S`.
+None.
 
 Remarks
 -------
